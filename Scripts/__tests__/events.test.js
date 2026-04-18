@@ -25,7 +25,7 @@ describe('EventRegistry', () => {
 
   describe('getAllEvents', () => {
     it('returns all registered events', () => {
-      expect(registry.getAllEvents().length).toBeGreaterThanOrEqual(9);
+      expect(registry.getAllEvents().length).toBeGreaterThanOrEqual(40);
     });
 
     it('every event has steps', () => {
