@@ -416,6 +416,60 @@ const BIBLICAL_EVENTS = {
     ],
   },
 
+  feeding_five_thousand: {
+    id: 'feeding_five_thousand',
+    title: 'Feeding the Five Thousand',
+    era: 'new_testament',
+    description: 'Jesus feeds a crowd of 5,000 men (plus women and children) with five loaves of bread and two fish, with twelve basketfuls of fragments left over.',
+    bibleRefs: ['John 6:1-15', 'Matthew 14:13-21'],
+    location: 'galilee',
+    characters: ['jesus', 'andrew', 'philip_apostle'],
+    category: 'miracle',
+    steps: [
+      { stepId: 'great_crowd', title: 'A Great Crowd', description: 'A great crowd follows Jesus because they saw his healing signs. Evening approaches and they are far from any town.' },
+      { stepId: 'the_test', title: 'The Test', description: 'Jesus asks Philip, "Where can we buy bread for these people?" — testing him. Philip says it would take eight months\' wages.' },
+      { stepId: 'five_loaves', title: 'Five Loaves and Two Fish', description: 'Andrew finds a boy with five small barley loaves and two small fish. "What are these among so many?"' },
+      { stepId: 'giving_thanks', title: 'Jesus Gives Thanks', description: 'Jesus has the crowd sit on the grass. He takes the loaves, gives thanks, and distributes them — and the fish also — as much as anyone wants.' },
+      { stepId: 'twelve_baskets', title: 'Twelve Baskets of Fragments', description: 'When everyone is full, the disciples gather the pieces. They fill twelve baskets. The people say, "This is truly the Prophet who is to come."' },
+    ],
+  },
+
+  walking_on_water: {
+    id: 'walking_on_water',
+    title: 'Walking on Water',
+    era: 'new_testament',
+    description: 'After feeding the five thousand, Jesus walks across the Sea of Galilee to his disciples\' storm-tossed boat; Peter steps out to meet him and begins to sink.',
+    bibleRefs: ['Matthew 14:22-33', 'John 6:16-21'],
+    location: 'galilee',
+    characters: ['jesus', 'peter'],
+    category: 'miracle',
+    steps: [
+      { stepId: 'disciples_alone', title: 'Disciples Cross Alone', description: 'Jesus sends the disciples ahead by boat while he dismisses the crowd and goes up a mountain alone to pray.' },
+      { stepId: 'storm', title: 'The Storm', description: 'The boat is buffeted by waves because the wind is against it. The disciples strain at the oars through the night.' },
+      { stepId: 'jesus_walks', title: 'Jesus Walks on the Sea', description: 'In the early morning Jesus walks out to them on the lake. The disciples see him and cry out in fear, thinking he is a ghost.' },
+      { stepId: 'peter_steps_out', title: 'Peter Steps Out', description: 'Peter says, "Lord, if it\'s you, tell me to come." Jesus says, "Come." Peter gets out of the boat and walks on the water toward Jesus.' },
+      { stepId: 'sinking', title: 'Sinking and Saved', description: 'Peter sees the wind and is afraid; he begins to sink and cries, "Lord, save me!" Jesus catches him: "You of little faith, why did you doubt?"' },
+    ],
+  },
+
+  transfiguration: {
+    id: 'transfiguration',
+    title: 'The Transfiguration',
+    era: 'new_testament',
+    description: 'Jesus is transfigured on a mountain before Peter, James, and John; his face shines like the sun, Moses and Elijah appear, and the Father\'s voice affirms him.',
+    bibleRefs: ['Matthew 17:1-13', 'Mark 9:2-13'],
+    location: 'mount_hermon',
+    characters: ['jesus', 'peter', 'james_apostle', 'john_apostle'],
+    category: 'revelation',
+    steps: [
+      { stepId: 'high_mountain', title: 'Up the Mountain', description: 'Jesus takes Peter, James, and John up a high mountain apart from the others.' },
+      { stepId: 'transfigured', title: 'Transfigured', description: 'Jesus is transfigured before them. His face shines like the sun; his clothes become as white as the light.' },
+      { stepId: 'moses_elijah', title: 'Moses and Elijah Appear', description: 'Moses and Elijah appear in glorious splendor, talking with Jesus about his coming departure.' },
+      { stepId: 'cloud', title: 'The Bright Cloud', description: 'A bright cloud envelops them. A voice from the cloud: "This is my Son, whom I love; listen to him!" The disciples fall facedown.' },
+      { stepId: 'vision_ends', title: 'Coming Down', description: 'Jesus touches them: "Get up. Don\'t be afraid." They look up and see only Jesus. On the way down he tells them to say nothing until after the resurrection.' },
+    ],
+  },
+
   creation: {
     id: 'creation',
     title: 'The Creation',
