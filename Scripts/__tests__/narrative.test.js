@@ -274,6 +274,69 @@ describe('NarrativeEngine', () => {
       eng.startExperience('creation');
       expect(() => eng.meetCharacter('moses')).toThrow('CharacterRegistry is required');
     });
+
+    it('throws when CharacterRegistry is missing on promptCharacter (line 112)', () => {
+      // Engine has events but no characters — exercises the guard on line 112.
+      const eng = new NarrativeEngine({ eventRegistry: new EventRegistry() });
+      eng.startExperience('creation');
+      expect(() => eng.promptCharacter('moses', 'greeting')).toThrow('CharacterRegistry is required');
+    });
+
+    it('throws when CharacterRegistry is missing on farewellCharacter (line 121)', () => {
+      const eng = new NarrativeEngine({ eventRegistry: new EventRegistry() });
+      eng.startExperience('creation');
+      expect(() => eng.farewellCharacter('moses')).toThrow('CharacterRegistry is required');
+    });
+
+    it('getCurrentLocation returns null when _events is null (line 132)', () => {
+      // Engine has a session (via a temporary swap) but no events registry.
+      const eng = new NarrativeEngine({
+        eventRegistry: new EventRegistry(),
+        locationRegistry: new LocationRegistry(),
+      });
+      eng.startExperience('creation');
+      eng._events = null; // remove registry after session starts
+      expect(eng.getCurrentLocation()).toBeNull();
+    });
+
+    it('getCurrentLocation returns null when _locations is null (line 134)', () => {
+      // Engine has events but no locations registry.
+      const eng = new NarrativeEngine({ eventRegistry: new EventRegistry() });
+      eng.startExperience('creation');
+      expect(eng.getCurrentLocation()).toBeNull();
+    });
+  });
+
+  // ── constructor with no args (line 15 default = {}) ──────────────────────
+
+  describe('constructor defaults', () => {
+    it('accepts no arguments without throwing (line 15 default branch)', () => {
+      expect(() => new NarrativeEngine()).not.toThrow();
+    });
+  });
+
+  // ── hasMetCharacter with no session (line 159 optional chain) ────────────
+
+  describe('hasMetCharacter with no session', () => {
+    it('returns false when session is null (line 159 optional chain)', () => {
+      const eng = new NarrativeEngine();
+      expect(eng.hasMetCharacter('moses')).toBe(false);
+    });
+  });
+
+  // ── _logStep edge case (line 175 conditional) ─────────────────────────────
+
+  describe('_logStep', () => {
+    it('does nothing when step is null (line 175 falsy branch)', () => {
+      engine.startExperience('creation');
+      expect(() => engine._logStep(null)).not.toThrow();
+      expect(engine.getSession().stepHistory).toHaveLength(1); // only the first step logged on start
+    });
+
+    it('does nothing when session is null (line 175 session check)', () => {
+      const eng = new NarrativeEngine();
+      expect(() => eng._logStep({ stepId: 'x' })).not.toThrow();
+    });
   });
 });
 
