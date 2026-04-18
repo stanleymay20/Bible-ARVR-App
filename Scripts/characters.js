@@ -490,6 +490,93 @@ const CHARACTERS = {
     },
   },
 
+  elisha: {
+    id: 'elisha',
+    name: 'Elisha',
+    era: 'divided_kingdom',
+    role: 'Prophet & Successor of Elijah',
+    description: 'The prophet who received a double portion of Elijah\'s spirit and performed twice as many miracles.',
+    bibleRefs: ['1 Kings 19:19', '2 Kings 2', '2 Kings 4-5'],
+    location: 'samaria',
+    relationships: { mentor: 'elijah' },
+    dialogue: {
+      greeting: 'Please let there be a double portion of your spirit on me.',
+      onMiracles: 'The iron axe head fell into the water — Where did it fall? And he cut a stick and threw it in and made the iron float.',
+      onNaaman: 'Go and wash in the Jordan seven times, and your flesh shall be restored and you shall be clean.',
+      farewell: 'When Elisha was sick with the illness of which he would die, Joash king of Israel wept over him.',
+    },
+  },
+
+  jezebel: {
+    id: 'jezebel',
+    name: 'Jezebel',
+    era: 'divided_kingdom',
+    role: 'Wicked Queen of Israel',
+    description: 'A Phoenician princess who married Ahab and led Israel into Baal worship, persecuting God\'s prophets.',
+    bibleRefs: ['1 Kings 18:4', '1 Kings 19:2', '1 Kings 21'],
+    location: 'samaria',
+    relationships: { husband: 'ahab' },
+    dialogue: {
+      greeting: 'Are you not the king of Israel? Eat and let your heart be cheerful. I will give you the vineyard.',
+      onElijah: 'So may the gods do to me and more also if I do not make your life as the life of one of them by this time tomorrow.',
+      onNaboth: 'Do you not govern Israel? Arise and eat bread and let your heart be cheerful. I will give you the vineyard.',
+      farewell: 'They went to bury her, but they found no more of her than the skull and the feet and the palms of her hands.',
+    },
+  },
+
+  ahab: {
+    id: 'ahab',
+    name: 'Ahab',
+    era: 'divided_kingdom',
+    role: 'Wicked King of Israel',
+    description: 'King of Israel who did more evil than all who were before him by marrying Jezebel and worshipping Baal.',
+    bibleRefs: ['1 Kings 16:30', '1 Kings 18', '1 Kings 21'],
+    location: 'samaria',
+    relationships: { wife: 'jezebel', nemesis: 'elijah' },
+    dialogue: {
+      greeting: 'Is it you, you troubler of Israel?',
+      onElijah: 'Have you found me, O my enemy?',
+      onNaboth: 'He went into his house vexed and sullen because of what Naboth had said to him.',
+      farewell: 'There was none who sold himself to do what was evil in the sight of the Lord like Ahab.',
+    },
+  },
+
+  isaiah: {
+    id: 'isaiah',
+    name: 'Isaiah',
+    era: 'divided_kingdom',
+    role: 'Prophet of the Messiah',
+    description: 'A major prophet whose visions foretold the Messiah\'s birth, suffering, and glory with extraordinary detail.',
+    bibleRefs: ['Isaiah 1', 'Isaiah 6', 'Isaiah 53', 'Isaiah 61'],
+    location: 'jerusalem',
+    relationships: {},
+    dialogue: {
+      greeting: 'I am a man of unclean lips — but the Lord has touched my mouth and taken away my guilt.',
+      onVision: 'I saw the Lord sitting upon a throne, high and lifted up, and the train of his robe filled the temple.',
+      onMessiah: 'For to us a child is born, to us a son is given; and the government shall be upon his shoulder.',
+      onSuffering: 'He was pierced for our transgressions; he was crushed for our iniquities; upon him was the chastisement that brought us peace.',
+      farewell: 'The Spirit of the Lord God is upon me, because the Lord has anointed me to bring good news to the poor.',
+    },
+  },
+
+  jeremiah: {
+    id: 'jeremiah',
+    name: 'Jeremiah',
+    era: 'divided_kingdom',
+    role: 'Weeping Prophet',
+    description: 'Called from birth to prophesy Judah\'s fall and the coming exile, he wept over his people\'s refusal to repent.',
+    bibleRefs: ['Jeremiah 1', 'Jeremiah 29', 'Jeremiah 31'],
+    location: 'jerusalem',
+    relationships: {},
+    dialogue: {
+      greeting: 'Ah, Lord God! Behold, I do not know how to speak, for I am only a youth.',
+      onCall: 'Before I formed you in the womb I knew you, and before you were born I consecrated you.',
+      onExile: 'Seek the welfare of the city where I have sent you into exile, and pray to the Lord on its behalf.',
+      onHope: 'For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope.',
+      farewell: 'Behold, the days are coming when I will make a new covenant with the house of Israel.',
+    },
+  },
+
   moses: {
     id: 'moses',
     name: 'Moses',
