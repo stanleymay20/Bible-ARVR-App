@@ -560,6 +560,60 @@ const BIBLICAL_EVENTS = {
     ],
   },
 
+  stephens_martyrdom: {
+    id: 'stephens_martyrdom',
+    title: 'The Martyrdom of Stephen',
+    era: 'early_church',
+    description: 'Stephen, the first Christian martyr, preaches boldly before the Sanhedrin, sees a vision of the risen Christ, and is stoned to death while praying for his killers.',
+    bibleRefs: ['Acts 6:8-7:60'],
+    location: 'jerusalem',
+    characters: ['stephen'],
+    category: 'martyrdom',
+    steps: [
+      { stepId: 'arrested', title: 'Stephen Arrested', description: 'False witnesses accuse Stephen of blasphemy against Moses and God. He is brought before the Sanhedrin.' },
+      { stepId: 'the_sermon', title: 'The Long Sermon', description: 'Stephen traces the whole history of Israel — Abraham, Joseph, Moses, the prophets — demonstrating that his accusers are repeating the sin of their forefathers.' },
+      { stepId: 'vision', title: 'The Vision', description: 'Stephen looks up to heaven and says: "I see heaven open and the Son of Man standing at the right hand of God." They cover their ears.' },
+      { stepId: 'stoning', title: 'The Stoning', description: 'They drag him outside the city and stone him. The witnesses lay their coats at the feet of a young man named Saul.' },
+      { stepId: 'last_prayer', title: 'Last Prayer', description: 'Stephen kneels and cries, "Lord, do not hold this sin against them." Then he falls asleep.' },
+    ],
+  },
+
+  pauls_conversion: {
+    id: 'pauls_conversion',
+    title: 'Paul\'s Conversion on the Damascus Road',
+    era: 'early_church',
+    description: 'Saul, breathing murderous threats against Christians, is struck down on the road to Damascus by a blinding light and hears the risen Christ ask, "Why do you persecute me?"',
+    bibleRefs: ['Acts 9:1-19'],
+    location: 'damascus',
+    characters: ['paul'],
+    category: 'conversion',
+    steps: [
+      { stepId: 'saul_breathes_threats', title: 'Saul\'s Mission', description: 'Saul asks for letters to Damascus synagogues to arrest Christians. He sets out breathing murderous threats.' },
+      { stepId: 'the_light', title: 'A Light from Heaven', description: 'Near Damascus a light from heaven flashes around Saul. He falls to the ground.' },
+      { stepId: 'the_voice', title: 'The Voice', description: '"Saul, Saul, why do you persecute me?" Saul asks who it is. "I am Jesus, whom you are persecuting. Now get up and go into the city."' },
+      { stepId: 'blind', title: 'Three Days Blind', description: 'Saul rises and is blind. He is led to Damascus and spends three days fasting, neither eating nor drinking.' },
+      { stepId: 'ananias', title: 'Ananias Comes', description: 'God sends Ananias to lay hands on Saul. Scales fall from Saul\'s eyes. He is baptized and begins to preach Christ immediately.' },
+    ],
+  },
+
+  pauls_missionary_journeys: {
+    id: 'pauls_missionary_journeys',
+    title: 'Paul\'s Missionary Journeys',
+    era: 'early_church',
+    description: 'Paul undertakes three missionary journeys across the Roman Empire, planting churches in major cities, enduring hardship, and advancing the gospel to the Gentile world.',
+    bibleRefs: ['Acts 13-20', 'Romans 15:19'],
+    location: 'antioch',
+    characters: ['paul', 'barnabas', 'silas', 'timothy', 'lydia'],
+    category: 'mission',
+    steps: [
+      { stepId: 'first_journey', title: 'First Journey: Cyprus to Asia Minor', description: 'Paul and Barnabas are sent out from Antioch. They travel through Cyprus and Pisidian Antioch, Iconium, Lystra, and Derbe.' },
+      { stepId: 'second_journey', title: 'Second Journey: Macedonia Called', description: 'Paul and Silas set out. A vision at Troas: a Macedonian man says, "Come over and help us." The gospel enters Europe.' },
+      { stepId: 'philippi', title: 'Philippi and Lydia', description: 'In Philippi, Lydia believes at the riverside prayer meeting and becomes the first European convert. Paul and Silas are jailed and sing at midnight.' },
+      { stepId: 'athens', title: 'Athens and the Unknown God', description: 'In Athens, Paul preaches at the Areopagus: "The God who made the world and everything in it does not live in temples made by human hands."' },
+      { stepId: 'third_journey', title: 'Third Journey: Ephesus and Beyond', description: 'Paul spends two years in Ephesus, then passes through Macedonia and Greece, heading toward Jerusalem and ultimately Rome.' },
+    ],
+  },
+
   creation: {
     id: 'creation',
     title: 'The Creation',
