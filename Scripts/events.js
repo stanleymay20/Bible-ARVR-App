@@ -146,6 +146,60 @@ const BIBLICAL_EVENTS = {
     ],
   },
 
+  burning_bush: {
+    id: 'burning_bush',
+    title: 'The Burning Bush',
+    era: 'exodus',
+    description: 'God appears to Moses in a burning bush that is not consumed, commissions him to lead Israel out of Egypt, and reveals his name "I AM."',
+    bibleRefs: ['Exodus 3:1-4:17'],
+    location: 'sinai',
+    characters: ['moses'],
+    category: 'calling',
+    steps: [
+      { stepId: 'the_bush', title: 'A Bush That Burns', description: 'While tending his father-in-law\'s flock on Horeb, Moses sees a bush that is ablaze but not burned up.' },
+      { stepId: 'holy_ground', title: 'Holy Ground', description: 'God calls Moses by name. "Take off your sandals, for the place where you are standing is holy ground."' },
+      { stepId: 'i_am', title: 'The Name of God', description: 'Moses asks God\'s name. God replies: "I AM WHO I AM. Tell the Israelites: I AM has sent me to you."' },
+      { stepId: 'commission', title: 'The Commission', description: 'God commands Moses to go to Pharaoh and bring the Israelites out of Egypt.' },
+      { stepId: 'signs', title: 'Signs and the Staff', description: 'God gives Moses miraculous signs — the staff that becomes a snake, the leprous hand — to convince the people.' },
+    ],
+  },
+
+  golden_calf: {
+    id: 'golden_calf',
+    title: 'The Golden Calf',
+    era: 'exodus',
+    description: 'While Moses receives the law on Mount Sinai, the Israelites convince Aaron to fashion a golden calf idol, provoking divine wrath that Moses intercedes to avert.',
+    bibleRefs: ['Exodus 32'],
+    location: 'sinai',
+    characters: ['moses', 'aaron'],
+    category: 'sin',
+    steps: [
+      { stepId: 'moses_delays', title: 'Moses Delays', description: 'Moses has been on the mountain forty days. The people grow restless and demand a god they can see.' },
+      { stepId: 'aaron_yields', title: 'Aaron Yields', description: 'Aaron collects gold earrings, melts them, and fashions a golden calf. The people say, "These are your gods, Israel!"' },
+      { stepId: 'gods_anger', title: 'Divine Wrath', description: 'God tells Moses what the people have done and his anger burns against them. Moses pleads for mercy.' },
+      { stepId: 'tablets_broken', title: 'The Tablets Broken', description: 'Moses descends and sees the revelry. In anger he throws down and shatters the stone tablets.' },
+      { stepId: 'intercession', title: 'Moses Intercedes', description: 'Moses returns to God and pleads, "Forgive their sin — or blot me out of your book." God renews his promise to go with Israel.' },
+    ],
+  },
+
+  twelve_spies: {
+    id: 'twelve_spies',
+    title: 'The Twelve Spies',
+    era: 'exodus',
+    description: 'Moses sends twelve spies into Canaan; ten return with a fearful report and only Caleb and Joshua urge trust in God, leading to forty years of wilderness wandering.',
+    bibleRefs: ['Numbers 13-14'],
+    location: 'sinai',
+    characters: ['moses', 'caleb', 'joshua'],
+    category: 'faith',
+    steps: [
+      { stepId: 'spies_sent', title: 'Spies Sent Out', description: 'Moses sends one leader from each tribe to scout the land of Canaan for forty days.' },
+      { stepId: 'good_land', title: 'A Land Flowing with Milk and Honey', description: 'The spies return with enormous fruit — a cluster of grapes so large two men carry it on a pole.' },
+      { stepId: 'bad_report', title: 'The Fearful Report', description: 'Ten spies say the inhabitants are giants: "We seemed like grasshoppers in our own eyes." The people weep all night.' },
+      { stepId: 'caleb_speaks', title: 'Caleb and Joshua Urge Faith', description: 'Caleb tears his garment and says, "Do not rebel. The Lord is with us. Do not be afraid of them." The crowd threatens to stone him.' },
+      { stepId: 'forty_years', title: 'Forty Years of Wandering', description: 'God decrees the generation that refused to trust him will not enter the land — one year of wandering for each day of spying.' },
+    ],
+  },
+
   creation: {
     id: 'creation',
     title: 'The Creation',
