@@ -25,6 +25,15 @@ describe('BibleData', () => {
     bible = new BibleData(SAMPLE_DATA);
   });
 
+  // ── constructor default (line 25 = {} branch) ───────────────────────────
+
+  describe('constructor', () => {
+    it('accepts no arguments and defaults to empty data (line 25 default branch)', () => {
+      const empty = new BibleData();
+      expect(empty.getVerse('Genesis', 1, 1)).toBeNull();
+    });
+  });
+
   // ── Book list & validation ──────────────────────────────────────────────
 
   describe('getBookList', () => {
@@ -144,6 +153,10 @@ describe('BibleData', () => {
 
     it('throws for an invalid book', () => {
       expect(() => bible.getChapter('Hezekiah', 1)).toThrow('Unknown book');
+    });
+
+    it('throws for a non-integer chapter (line 67 branch)', () => {
+      expect(() => bible.getChapter('Genesis', 2.5)).toThrow('Chapter');
     });
   });
 

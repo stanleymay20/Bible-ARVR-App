@@ -174,4 +174,12 @@ describe('CharacterRegistry', () => {
       expect(registry.isInteractionActive('moses')).toBe(false);
     });
   });
+
+  // ── getInteractionState null branch (line 195) ────────────────────────────
+
+  describe('getInteractionState', () => {
+    it('returns null for a character that has never been interacted with (line 195 ?? null)', () => {
+      expect(registry.getInteractionState('abraham')).toBeNull();
+    });
+  });
 });

@@ -122,6 +122,13 @@ describe('EventRegistry', () => {
       const step = registry.getCurrentStep();
       expect(step.stepId).toBe('pursued');
     });
+
+    it('returns null when currentStepIndex is out of bounds (line 262 ?? null)', () => {
+      // Directly manipulate internal state to simulate an out-of-bounds index.
+      registry.startEvent('creation');
+      registry._currentStepIndex = 999;
+      expect(registry.getCurrentStep()).toBeNull();
+    });
   });
 
   // ── advanceStep ───────────────────────────────────────────────────────────

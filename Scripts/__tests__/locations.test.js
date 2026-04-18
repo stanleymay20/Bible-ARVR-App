@@ -139,8 +139,12 @@ describe('LocationRegistry', () => {
       expect(registry.getDistance('jerusalem', 'eden')).toBeNull();
     });
 
-    it('throws for an unknown location', () => {
+    it('throws for an unknown location (first arg)', () => {
       expect(() => registry.getDistance('narnia', 'jerusalem')).toThrow('Unknown location');
+    });
+
+    it('throws for an unknown location (second arg — line 219 guard)', () => {
+      expect(() => registry.getDistance('jerusalem', 'narnia')).toThrow('Unknown location');
     });
 
     it('distance is symmetric', () => {
