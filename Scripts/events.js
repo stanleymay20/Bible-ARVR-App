@@ -362,6 +362,60 @@ const BIBLICAL_EVENTS = {
     ],
   },
 
+  annunciation: {
+    id: 'annunciation',
+    title: 'The Annunciation',
+    era: 'new_testament',
+    description: 'The angel Gabriel visits Mary in Nazareth, announces that she will conceive and bear the Son of God by the Holy Spirit, and Mary responds with faithful surrender.',
+    bibleRefs: ['Luke 1:26-38'],
+    location: 'nazareth',
+    characters: ['mary', 'elizabeth'],
+    category: 'miracle',
+    steps: [
+      { stepId: 'gabriel_appears', title: 'Gabriel Appears', description: 'The angel Gabriel is sent from God to a virgin named Mary. "Greetings, you who are highly favored! The Lord is with you."' },
+      { stepId: 'mary_troubled', title: 'Mary Is Troubled', description: 'Mary is greatly troubled at the angel\'s words and wonders what this greeting might mean.' },
+      { stepId: 'the_message', title: 'The Message', description: 'Gabriel says: "You will conceive and give birth to a son, and you are to call him Jesus. He will be the Son of the Most High."' },
+      { stepId: 'marys_question', title: 'Mary\'s Question', description: '"How will this be," Mary asks, "since I am a virgin?" Gabriel answers: "The Holy Spirit will come on you. Nothing is impossible with God."' },
+      { stepId: 'marys_surrender', title: 'Mary\'s Surrender', description: 'Mary says, "I am the Lord\'s servant. May your word to me be fulfilled." Then the angel leaves her.' },
+    ],
+  },
+
+  baptism_of_jesus: {
+    id: 'baptism_of_jesus',
+    title: 'The Baptism of Jesus',
+    era: 'new_testament',
+    description: 'Jesus comes to John at the Jordan River to be baptized; as he comes up from the water the heavens open, the Spirit descends as a dove, and the Father speaks.',
+    bibleRefs: ['Matthew 3:13-17', 'Mark 1:9-11'],
+    location: 'jordan_river',
+    characters: ['jesus', 'john_the_baptist'],
+    category: 'revelation',
+    steps: [
+      { stepId: 'john_protests', title: 'John\'s Protest', description: 'John tries to deter Jesus: "I need to be baptized by you, and you come to me?" Jesus insists it is right to fulfill all righteousness.' },
+      { stepId: 'in_the_water', title: 'Into the Jordan', description: 'Jesus is baptized by John in the Jordan River, fully immersed in the waters of repentance — though he has no sin to repent of.' },
+      { stepId: 'heavens_open', title: 'Heavens Open', description: 'As Jesus comes up from the water, the heavens are torn open.' },
+      { stepId: 'dove', title: 'The Spirit Descends', description: 'The Holy Spirit descends on Jesus like a dove and rests on him.' },
+      { stepId: 'fathers_voice', title: 'The Father\'s Voice', description: 'A voice from heaven says: "This is my Son, whom I love; with him I am well pleased." The Trinity is revealed.' },
+    ],
+  },
+
+  temptation_of_jesus: {
+    id: 'temptation_of_jesus',
+    title: 'The Temptation of Jesus',
+    era: 'new_testament',
+    description: 'After forty days of fasting in the wilderness, Jesus is tempted three times by Satan and overcomes each temptation with Scripture.',
+    bibleRefs: ['Matthew 4:1-11', 'Luke 4:1-13'],
+    location: 'wilderness',
+    characters: ['jesus'],
+    category: 'spiritual_warfare',
+    steps: [
+      { stepId: 'forty_days', title: 'Forty Days of Fasting', description: 'The Spirit leads Jesus into the wilderness. He fasts forty days and forty nights and is very hungry.' },
+      { stepId: 'temptation_bread', title: 'Turn Stones to Bread', description: 'Satan says: "If you are the Son of God, tell these stones to become bread." Jesus replies: "Man does not live on bread alone."' },
+      { stepId: 'temptation_temple', title: 'Leap from the Temple', description: 'Satan takes Jesus to the highest point of the temple and dares him to jump, quoting Psalm 91. Jesus says: "Do not put the Lord to the test."' },
+      { stepId: 'temptation_kingdoms', title: 'All the Kingdoms', description: 'Satan offers all the kingdoms of the world for one act of worship. Jesus says: "Away from me! Worship the Lord your God and serve him only."' },
+      { stepId: 'angels_minister', title: 'Angels Minister', description: 'The devil leaves. Angels come and minister to Jesus.' },
+    ],
+  },
+
   creation: {
     id: 'creation',
     title: 'The Creation',
