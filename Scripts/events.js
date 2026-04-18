@@ -290,6 +290,78 @@ const BIBLICAL_EVENTS = {
     ],
   },
 
+  elijah_vs_baal: {
+    id: 'elijah_vs_baal',
+    title: 'Elijah vs. the Prophets of Baal',
+    era: 'divided_kingdom',
+    description: 'On Mount Carmel, Elijah challenges 450 prophets of Baal to a contest — the God who answers by fire is the true God. The Lord answers dramatically.',
+    bibleRefs: ['1 Kings 18:16-46'],
+    location: 'mount_carmel',
+    characters: ['elijah', 'ahab'],
+    category: 'miracle',
+    steps: [
+      { stepId: 'challenge', title: 'The Challenge', description: 'Elijah challenges Israel: "How long will you waver? If the Lord is God, follow him; if Baal, follow him." The people are silent.' },
+      { stepId: 'baals_failure', title: 'Baal Does Not Answer', description: 'The 450 prophets of Baal cry out all morning. Elijah mocks them: "Perhaps your god is sleeping or on a journey!"' },
+      { stepId: 'elijahs_altar', title: 'Elijah Builds the Altar', description: 'Elijah rebuilds the Lord\'s altar with twelve stones, digs a trench, and drenches the offering with four large jars of water — three times.' },
+      { stepId: 'fire_from_heaven', title: 'Fire from Heaven', description: 'Elijah prays simply. Fire falls and consumes the offering, the wood, the stones, the soil, and all the water in the trench.' },
+      { stepId: 'rain', title: 'The Rain Returns', description: 'The people fall prostrate and cry, "The Lord — he is God!" Then Elijah prays, and after three years of drought the rain returns.' },
+    ],
+  },
+
+  jonah_and_whale: {
+    id: 'jonah_and_whale',
+    title: 'Jonah and the Great Fish',
+    era: 'divided_kingdom',
+    description: 'Jonah flees from God\'s commission to preach to Nineveh, is swallowed by a great fish, prays from inside it, is vomited out, and ultimately fulfills his mission.',
+    bibleRefs: ['Jonah 1-4'],
+    location: 'nineveh',
+    characters: ['jonah'],
+    category: 'calling',
+    steps: [
+      { stepId: 'fleeing', title: 'Jonah Flees', description: 'God commands Jonah to go to Nineveh. Jonah boards a ship to Tarshish — the opposite direction.' },
+      { stepId: 'storm', title: 'The Storm', description: 'God sends a violent storm. The sailors pray to their gods and cast lots — the lot falls on Jonah.' },
+      { stepId: 'overboard', title: 'Thrown Overboard', description: 'Jonah tells them to throw him in to calm the sea. They do. The sea grows calm. A great fish swallows Jonah.' },
+      { stepId: 'prayer', title: 'Prayer from the Deep', description: 'Inside the fish for three days, Jonah prays. "From the depths of the grave I called for help and you listened."' },
+      { stepId: 'nineveh', title: 'Nineveh Repents', description: 'Vomited onto dry land, Jonah preaches. All Nineveh — from king to cattle — fasts and repents. God relents.' },
+    ],
+  },
+
+  daniel_in_lions_den: {
+    id: 'daniel_in_lions_den',
+    title: 'Daniel in the Lions\' Den',
+    era: 'exile',
+    description: 'Jealous rivals trick King Darius into outlawing prayer to anyone but himself; Daniel continues praying and is thrown to the lions, emerging unharmed.',
+    bibleRefs: ['Daniel 6'],
+    location: 'babylon',
+    characters: ['daniel'],
+    category: 'faith',
+    steps: [
+      { stepId: 'conspiracy', title: 'The Conspiracy', description: 'Jealous administrators try to find fault with Daniel but cannot. They target his devotion to God.' },
+      { stepId: 'decree', title: 'The Royal Decree', description: 'They convince Darius to issue a decree: no one may pray to any god or man except the king for thirty days.' },
+      { stepId: 'daniel_prays', title: 'Daniel Prays', description: 'Daniel goes home, opens his window toward Jerusalem, and prays three times a day as he has always done.' },
+      { stepId: 'lions_den', title: 'Into the Den', description: 'Daniel is thrown into the den of lions. Darius seals it with his signet ring and spends a sleepless night fasting.' },
+      { stepId: 'unharmed', title: 'Unharmed', description: 'At dawn, Darius runs to the den and calls out. Daniel answers. The king brings him out — not a scratch on him. God had shut the lions\' mouths.' },
+    ],
+  },
+
+  fiery_furnace: {
+    id: 'fiery_furnace',
+    title: 'The Fiery Furnace',
+    era: 'exile',
+    description: 'Three young Hebrews refuse to bow to Nebuchadnezzar\'s golden statue and are thrown into a furnace seven times hotter than normal, yet emerge without a singed hair.',
+    bibleRefs: ['Daniel 3'],
+    location: 'babylon',
+    characters: ['daniel'],
+    category: 'faith',
+    steps: [
+      { stepId: 'statue', title: 'The Golden Statue', description: 'Nebuchadnezzar erects a golden statue ninety feet tall and commands all people to bow when the music plays.' },
+      { stepId: 'refusal', title: 'The Refusal', description: 'Shadrach, Meshach, and Abednego refuse. "If we are thrown into the fire, the God we serve is able to save us — but even if he does not, we will not bow."' },
+      { stepId: 'furnace_heated', title: 'Furnace Heated Sevenfold', description: 'The furious king orders the furnace heated seven times hotter. The soldiers who throw them in are killed by the flames.' },
+      { stepId: 'fourth_man', title: 'A Fourth Figure', description: 'Nebuchadnezzar peers in and says, "I see four men walking in the fire, and the fourth looks like a son of the gods!"' },
+      { stepId: 'unharmed', title: 'Not Even Singed', description: 'They walk out. The satraps see no hair singed, no clothing scorched, and they do not even smell of fire.' },
+    ],
+  },
+
   creation: {
     id: 'creation',
     title: 'The Creation',
