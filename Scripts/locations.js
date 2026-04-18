@@ -396,6 +396,20 @@ const LOCATIONS = {
     ambience: 'Rocky Aegean coastline, caves in the hillside, the sound of waves, a blinding vision of the glorified Christ.',
   },
 
+  philippi: {
+    id: 'philippi',
+    name: 'Philippi',
+    region: 'Macedonia (modern northern Greece)',
+    description: 'A leading city of Macedonia where Paul planted the first European church; site of Lydia\'s conversion, Paul and Silas\'s midnight singing in prison, and the jailer\'s baptism.',
+    bibleRefs: ['Acts 16:12-40', 'Philippians 1:1'],
+    coordinates: { lat: 41.0117, lng: 24.2883 },
+    era: 'early_church',
+    associatedEvents: ['pauls_missionary_journeys'],
+    associatedCharacters: ['paul', 'lydia', 'silas'],
+    environmentType: 'city',
+    ambience: 'A Macedonian city of Roman character, a riverside prayer meeting at dawn, prison walls that could not hold the gospel.',
+  },
+
   eden: {
     id: 'eden',
     name: 'Garden of Eden',
