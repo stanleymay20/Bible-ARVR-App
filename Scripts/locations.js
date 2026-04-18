@@ -172,6 +172,48 @@ const LOCATIONS = {
     ambience: 'Winding reeds along the riverbank, cool rushing water, the cry of water birds, the sense of crossing a threshold.',
   },
 
+  babylon: {
+    id: 'babylon',
+    name: 'Babylon',
+    region: 'Mesopotamia (modern Iraq)',
+    description: 'The great empire of Nebuchadnezzar that destroyed Jerusalem and carried Judah into exile; setting of Daniel\'s faithfulness in the lions\' den and the fiery furnace.',
+    bibleRefs: ['Daniel 1', 'Daniel 3', 'Daniel 6', 'Isaiah 14:4'],
+    coordinates: { lat: 32.5424, lng: 44.4206 },
+    era: 'exile',
+    associatedEvents: ['daniel_in_lions_den', 'fiery_furnace'],
+    associatedCharacters: ['daniel', 'ezekiel', 'nehemiah'],
+    environmentType: 'city',
+    ambience: 'Towering ziggurats and the Ishtar Gate of brilliant blue tile, the smell of incense and the distant sound of Babylonian hymns.',
+  },
+
+  nineveh: {
+    id: 'nineveh',
+    name: 'Nineveh',
+    region: 'Mesopotamia (modern Mosul, Iraq)',
+    description: 'Capital of the Assyrian Empire and one of the largest cities of the ancient world, to which Jonah was sent to preach repentance and which astonishingly repented.',
+    bibleRefs: ['Jonah 1:2', 'Jonah 3', 'Nahum 1:1'],
+    coordinates: { lat: 36.3597, lng: 43.1583 },
+    era: 'divided_kingdom',
+    associatedEvents: ['jonah_and_whale'],
+    associatedCharacters: ['jonah'],
+    environmentType: 'city',
+    ambience: 'Massive city walls, markets filled with the sounds of merchants, a populace draped in sackcloth in a great act of repentance.',
+  },
+
+  dead_sea: {
+    id: 'dead_sea',
+    name: 'Dead Sea',
+    region: 'Israel / Jordan border',
+    description: 'The lowest point on earth\'s surface, bordering the region where Sodom and Gomorrah once stood; its salt waters are referenced throughout Scripture.',
+    bibleRefs: ['Genesis 14:3', 'Ezekiel 47:8'],
+    coordinates: { lat: 31.5, lng: 35.5 },
+    era: 'patriarchs',
+    associatedEvents: [],
+    associatedCharacters: ['lot'],
+    environmentType: 'sea',
+    ambience: 'Crystalline salt flats, blistering heat, the eerie shimmer of water too salty to sustain life, surrounding barren cliffs.',
+  },
+
   eden: {
     id: 'eden',
     name: 'Garden of Eden',
