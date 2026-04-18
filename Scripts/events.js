@@ -200,6 +200,60 @@ const BIBLICAL_EVENTS = {
     ],
   },
 
+  fall_of_jericho: {
+    id: 'fall_of_jericho',
+    title: 'The Fall of Jericho',
+    era: 'conquest',
+    description: 'God commands the Israelites to march around Jericho for seven days; on the seventh day, at the sound of trumpets and shouts, the city walls collapse.',
+    bibleRefs: ['Joshua 6'],
+    location: 'jericho',
+    characters: ['joshua'],
+    category: 'miracle',
+    steps: [
+      { stepId: 'gods_plan', title: 'God\'s Battle Plan', description: 'God tells Joshua: march around the city once daily for six days, with priests carrying trumpets before the ark.' },
+      { stepId: 'six_days', title: 'Six Days of Marching', description: 'The Israelites march in silence around Jericho for six days. The city is tightly shut — no one goes out or in.' },
+      { stepId: 'seventh_day', title: 'The Seventh Day', description: 'On the seventh day they march around seven times. Then the priests blow the trumpets.' },
+      { stepId: 'the_shout', title: 'The Shout', description: 'Joshua commands the people: "Shout! For the Lord has given you the city!" They shout with a great shout.' },
+      { stepId: 'walls_fall', title: 'Walls Collapse', description: 'The wall falls flat. The Israelites charge straight in and take the city. Rahab\'s household is spared.' },
+    ],
+  },
+
+  samson_and_delilah: {
+    id: 'samson_and_delilah',
+    title: 'Samson and Delilah',
+    era: 'judges',
+    description: 'The Philistine Delilah is hired to discover the source of Samson\'s strength; after persistent questioning he reveals his Nazirite vow, leading to his capture and final victory.',
+    bibleRefs: ['Judges 16'],
+    location: 'valley_of_elah',
+    characters: ['samson', 'delilah'],
+    category: 'tragedy',
+    steps: [
+      { stepId: 'delilah_paid', title: 'Delilah Hired', description: 'Philistine rulers each offer Delilah 1,100 pieces of silver to find out the source of Samson\'s strength.' },
+      { stepId: 'three_lies', title: 'Three False Answers', description: 'Samson gives three false sources of his strength; Delilah tests each and says, "The Philistines are upon you!" He escapes each time.' },
+      { stepId: 'the_secret', title: 'The Secret Revealed', description: 'Worn down by her nagging, Samson tells the truth: he is a Nazirite — if his head is shaved, his strength will leave.' },
+      { stepId: 'capture', title: 'Captured and Blinded', description: 'While Samson sleeps, Delilah shaves his head. The Philistines capture him, gouge out his eyes, and grind grain in prison.' },
+      { stepId: 'final_strength', title: 'The Temple Falls', description: 'His hair grows back. At a Philistine feast, Samson prays for strength one last time and collapses the temple pillars on the crowd.' },
+    ],
+  },
+
+  ruth_and_boaz: {
+    id: 'ruth_and_boaz',
+    title: 'Ruth and Boaz',
+    era: 'judges',
+    description: 'Ruth, a Moabite widow, follows her mother-in-law Naomi back to Bethlehem, finds favor gleaning in the fields of Boaz, and is redeemed as his bride.',
+    bibleRefs: ['Ruth 1-4'],
+    location: 'bethlehem',
+    characters: ['ruth', 'naomi', 'boaz'],
+    category: 'redemption',
+    steps: [
+      { stepId: 'naomi_returns', title: 'Return to Bethlehem', description: 'Widowed Naomi tells her daughters-in-law to return to their families. Ruth clings to her: "Where you go I will go."' },
+      { stepId: 'gleaning', title: 'Gleaning in the Fields', description: 'Ruth goes to glean leftover grain. By providence she works in the field of Boaz, a relative of Naomi\'s late husband.' },
+      { stepId: 'boaz_kindness', title: 'Boaz Shows Kindness', description: 'Boaz instructs his workers to leave extra grain for Ruth and to protect her. He is moved by her loyalty to Naomi.' },
+      { stepId: 'threshing_floor', title: 'The Threshing Floor', description: 'Following Naomi\'s instruction, Ruth lies at Boaz\'s feet and asks him to spread his cloak over her — an appeal to be her kinsman-redeemer.' },
+      { stepId: 'redemption', title: 'Redemption and Marriage', description: 'Boaz settles the legal claim at the city gate, buys Naomi\'s land, and takes Ruth as his wife. She becomes an ancestor of King David.' },
+    ],
+  },
+
   creation: {
     id: 'creation',
     title: 'The Creation',
