@@ -902,3 +902,75 @@ describe('_get request structure', () => {
     expect(url).toBe(absoluteUrl);
   });
 });
+
+// ── HTTP error where response.text() itself rejects (line 220 catch branch) ───
+
+describe('HTTP error with unreadable body', () => {
+  it('falls back to empty string when response.text() rejects (line 220 catch fn)', async () => {
+    // Simulate a 500 response whose body stream is broken.
+    const brokenFetch = jest.fn().mockResolvedValue({
+      ok: false,
+      status: 500,
+      statusText: 'Internal Server Error',
+      json: jest.fn(),
+      text: jest.fn().mockRejectedValue(new Error('stream destroyed')),
+    });
+    const client = makeClient(brokenFetch);
+    await expect(client.getBibles()).rejects.toThrow('API.Bible request failed: 500');
+  });
+});
+
+// ── Constructor called with no arguments (line 32 default = {}) ───────────────
+
+describe('BibleApiClient constructed with no arguments', () => {
+  it('does not throw and sets apiKey to empty string (line 32 default branch)', () => {
+    // Calling new BibleApiClient() exercises the `= {}` parameter default on
+    // the constructor signature — the branch that was previously uncovered.
+    expect(() => new BibleApiClient()).not.toThrow();
+    const client = new BibleApiClient();
+    expect(client._apiKey).toBe('');
+    expect(client._bibleId).toBe(DEFAULT_BIBLE_ID);
+  });
+
+  it('assigns the global fetch fallback when fetchFn is omitted (line 35 branch)', async () => {
+    // When no fetchFn is supplied the client falls back to the ambient `fetch`.
+    // We set global.fetch to a spy and actually call a method so the arrow
+    // function on line 35 is executed — covering the function, not just its assignment.
+    const mockResponse = {
+      ok: true,
+      status: 200,
+      statusText: 'OK',
+      json: jest.fn().mockResolvedValue({ data: [] }),
+      text: jest.fn().mockResolvedValue(''),
+    };
+    const spy = jest.fn().mockResolvedValue(mockResponse);
+    const prev = global.fetch;
+    global.fetch = spy;
+    try {
+      const client = new BibleApiClient({ apiKey: 'k' });
+      await client.getBibles();
+      expect(spy).toHaveBeenCalledTimes(1);
+    } finally {
+      global.fetch = prev;
+    }
+  });
+});
+
+// ── searchForAR with null/undefined verse text (line 167 branch) ─────────────
+
+describe('searchForAR null text branch', () => {
+  it('returns empty string for a verse whose text is null (line 167 ?? branch)', async () => {
+    const fetch = mockFetch({
+      data: {
+        verses: [
+          { id: 'GEN.1.1', reference: 'Genesis 1:1', text: null },
+          { id: 'GEN.1.2', reference: 'Genesis 1:2', text: undefined },
+        ],
+      },
+    });
+    const client = makeClient(fetch);
+    const results = await client.searchForAR('beginning');
+    expect(results[0].text).toBe('');
+    expect(results[1].text).toBe('');
+  });
+});
