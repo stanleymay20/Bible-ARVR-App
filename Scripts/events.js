@@ -254,6 +254,42 @@ const BIBLICAL_EVENTS = {
     ],
   },
 
+  samuel_anoints_david: {
+    id: 'samuel_anoints_david',
+    title: 'Samuel Anoints David',
+    era: 'united_kingdom',
+    description: 'After God rejects Saul, Samuel travels to Bethlehem and anoints the young shepherd David as the future king of Israel.',
+    bibleRefs: ['1 Samuel 16:1-13'],
+    location: 'bethlehem',
+    characters: ['samuel', 'david'],
+    category: 'calling',
+    steps: [
+      { stepId: 'god_sends', title: 'God Sends Samuel', description: 'God sends Samuel to Jesse of Bethlehem, saying one of his sons will be king. Samuel is afraid — Saul might hear.' },
+      { stepId: 'seven_brothers', title: 'Seven Brothers Pass', description: 'Seven of Jesse\'s sons pass before Samuel. Each time God says, "Not this one. Man looks at outward appearance; God looks at the heart."' },
+      { stepId: 'the_youngest', title: 'The Youngest is Sent For', description: 'Samuel asks if there are any more sons. Jesse admits the youngest is tending sheep. They send for him.' },
+      { stepId: 'anointing', title: 'The Anointing', description: 'David arrives — ruddy, bright-eyed, handsome. God says, "Rise and anoint him; this is the one." Samuel anoints David.' },
+      { stepId: 'spirit_comes', title: 'The Spirit Comes', description: 'From that day on, the Spirit of the Lord came powerfully upon David.' },
+    ],
+  },
+
+  solomons_temple: {
+    id: 'solomons_temple',
+    title: 'Solomon Builds the Temple',
+    era: 'united_kingdom',
+    description: 'King Solomon builds and dedicates the magnificent first Temple in Jerusalem as the permanent dwelling place of God\'s presence among Israel.',
+    bibleRefs: ['1 Kings 6-8', '2 Chronicles 3-7'],
+    location: 'jerusalem',
+    characters: ['solomon'],
+    category: 'worship',
+    steps: [
+      { stepId: 'preparations', title: 'Preparations', description: 'Solomon secures cedar from Lebanon and conscripts labor. The foundational stone is laid in the fourth year of his reign.' },
+      { stepId: 'construction', title: 'Seven Years of Building', description: 'The Temple takes seven years to build. No hammer, chisel, or iron tool is heard at the site — stones are finished off-site.' },
+      { stepId: 'ark_brought', title: 'The Ark Is Brought In', description: 'The priests carry the ark of the covenant into the Most Holy Place. A cloud fills the temple — the glory of the Lord.' },
+      { stepId: 'dedication', title: 'Solomon\'s Prayer', description: 'Solomon stands before the altar and prays: "Will God really dwell on earth? Heaven cannot contain you, much less this house I have built."' },
+      { stepId: 'fire_falls', title: 'Fire from Heaven', description: 'Fire falls from heaven and consumes the burnt offering. The glory of the Lord fills the temple. The people bow in worship.' },
+    ],
+  },
+
   creation: {
     id: 'creation',
     title: 'The Creation',
