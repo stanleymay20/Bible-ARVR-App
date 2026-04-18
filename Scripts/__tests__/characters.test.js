@@ -27,7 +27,7 @@ describe('CharacterRegistry', () => {
   describe('getAllCharacters', () => {
     it('returns all characters', () => {
       const all = registry.getAllCharacters();
-      expect(all.length).toBeGreaterThanOrEqual(7);
+      expect(all.length).toBeGreaterThanOrEqual(50);
     });
 
     it('every character has required fields', () => {
