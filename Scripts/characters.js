@@ -4,6 +4,77 @@
  */
 
 const CHARACTERS = {
+  adam: {
+    id: 'adam',
+    name: 'Adam',
+    era: 'creation',
+    role: 'First Man',
+    description: 'The first human being, formed by God from the dust of the ground and given the breath of life.',
+    bibleRefs: ['Genesis 2', 'Genesis 3', 'Romans 5:14'],
+    location: 'eden',
+    relationships: { wife: 'eve', son: 'cain', son2: 'abel', son3: 'seth' },
+    dialogue: {
+      greeting: 'The Lord God formed me from the dust of the ground and breathed life into my nostrils.',
+      onCreation: 'This is now bone of my bones and flesh of my flesh; she shall be called Woman.',
+      onFall: 'I heard your voice in the garden, and I was afraid because I was naked, so I hid.',
+      onEden: 'The Lord God planted a garden in the east, in Eden, and placed me there.',
+      farewell: 'By the sweat of your face you shall eat bread, till you return to the ground.',
+    },
+  },
+
+  eve: {
+    id: 'eve',
+    name: 'Eve',
+    era: 'creation',
+    role: 'First Woman & Mother of All Living',
+    description: 'Created by God from Adam\'s rib, the first woman and mother of all humanity.',
+    bibleRefs: ['Genesis 2:22', 'Genesis 3', 'Genesis 4:1'],
+    location: 'eden',
+    relationships: { husband: 'adam', son: 'cain', son2: 'abel' },
+    dialogue: {
+      greeting: 'God created me to be a helper fit for Adam — bone of his bones and flesh of his flesh.',
+      onSerpent: 'The serpent said to me, You will not surely die. God knows that when you eat you will be like God.',
+      onFall: 'The serpent deceived me, and I ate.',
+      onCain: 'I have gotten a man with the help of the Lord.',
+      farewell: 'She was called Eve, because she was the mother of all living.',
+    },
+  },
+
+  cain: {
+    id: 'cain',
+    name: 'Cain',
+    era: 'antediluvian',
+    role: 'First Murderer',
+    description: 'The firstborn son of Adam and Eve who killed his brother Abel out of jealousy, becoming the first murderer.',
+    bibleRefs: ['Genesis 4'],
+    location: 'eden',
+    relationships: { father: 'adam', mother: 'eve', brother: 'abel' },
+    dialogue: {
+      greeting: 'I worked the ground and brought an offering to the Lord from its fruit.',
+      onOffering: 'The Lord had no regard for me and my offering, and I was very angry.',
+      onAbel: 'Am I my brother\'s keeper?',
+      onCurse: 'My punishment is greater than I can bear. I will be hidden from your face.',
+      farewell: 'The Lord put a mark on me so that no one who found me would strike me.',
+    },
+  },
+
+  abel: {
+    id: 'abel',
+    name: 'Abel',
+    era: 'antediluvian',
+    role: 'First Martyr',
+    description: 'The second son of Adam and Eve, a shepherd whose offering was accepted by God — killed by his brother Cain.',
+    bibleRefs: ['Genesis 4', 'Hebrews 11:4', 'Matthew 23:35'],
+    location: 'eden',
+    relationships: { father: 'adam', mother: 'eve', brother: 'cain' },
+    dialogue: {
+      greeting: 'By faith I offered God a more acceptable sacrifice than Cain — and was commended as righteous.',
+      onOffering: 'I brought the firstborn of my flock, the fat portions — and the Lord had regard for me.',
+      onFaith: 'By faith Abel still speaks, though he is dead.',
+      farewell: 'The voice of your brother\'s blood is crying to me from the ground.',
+    },
+  },
+
   moses: {
     id: 'moses',
     name: 'Moses',
