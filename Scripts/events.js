@@ -20,6 +20,60 @@ const ERA_ORDER = [
 ];
 
 const BIBLICAL_EVENTS = {
+  fall_of_man: {
+    id: 'fall_of_man',
+    title: 'The Fall of Man',
+    era: 'creation',
+    description: 'Adam and Eve disobey God by eating forbidden fruit, are expelled from Eden, and sin enters human history.',
+    bibleRefs: ['Genesis 3'],
+    location: 'eden',
+    characters: ['adam', 'eve'],
+    category: 'fall',
+    steps: [
+      { stepId: 'serpent_speaks', title: 'The Temptation', description: 'The serpent questions God\'s command and entices Eve to eat from the tree of knowledge.' },
+      { stepId: 'fruit_taken', title: 'The Forbidden Fruit', description: 'Eve and Adam eat the fruit; their eyes are opened and they realize they are naked.' },
+      { stepId: 'god_calls', title: 'God Calls', description: 'God walks in the garden and calls to Adam, who hides in shame.' },
+      { stepId: 'consequences', title: 'The Judgment', description: 'God pronounces judgment on the serpent, the woman, and the man, and expels them from Eden.' },
+      { stepId: 'expulsion', title: 'Expelled from Eden', description: 'An angel with a flaming sword guards the way to the tree of life as Adam and Eve depart.' },
+    ],
+  },
+
+  cain_and_abel: {
+    id: 'cain_and_abel',
+    title: 'Cain and Abel',
+    era: 'antediluvian',
+    description: 'The first brothers offer sacrifices to God; God accepts Abel\'s but not Cain\'s, leading to jealousy, murder, and the first exile.',
+    bibleRefs: ['Genesis 4:1-16'],
+    location: 'eden',
+    characters: ['cain', 'abel'],
+    category: 'tragedy',
+    steps: [
+      { stepId: 'offerings', title: 'Two Offerings', description: 'Cain brings produce from the soil; Abel brings the firstborn of his flock. God favors Abel\'s offering.' },
+      { stepId: 'cains_anger', title: 'Cain\'s Anger', description: 'Cain is furious. God warns him: "Sin is crouching at the door, but you must rule over it."' },
+      { stepId: 'the_field', title: 'Into the Field', description: 'Cain invites Abel into the field — and rises up against his brother and kills him.' },
+      { stepId: 'gods_question', title: 'Where is Your Brother?', description: 'God asks Cain where Abel is. Cain answers, "Am I my brother\'s keeper?"' },
+      { stepId: 'mark_of_cain', title: 'The Mark', description: 'Cain is cursed to wander, but God puts a mark on him so no one who finds him will kill him.' },
+    ],
+  },
+
+  tower_of_babel: {
+    id: 'tower_of_babel',
+    title: 'The Tower of Babel',
+    era: 'antediluvian',
+    description: 'Humanity gathers to build a city and tower reaching to the heavens; God confuses their language and scatters them across the earth.',
+    bibleRefs: ['Genesis 11:1-9'],
+    location: 'babel',
+    characters: [],
+    category: 'judgment',
+    steps: [
+      { stepId: 'one_language', title: 'One Language', description: 'The whole earth has one language and the same words. People migrate to the plain of Shinar.' },
+      { stepId: 'building', title: 'Building the Tower', description: 'They decide to build a city and a tower with its top in the heavens, to make a name for themselves.' },
+      { stepId: 'gods_descent', title: 'The Lord Descends', description: 'The Lord comes down to see the city and tower. "Nothing they plan will be impossible for them."' },
+      { stepId: 'confusion', title: 'Language Confused', description: 'God confuses their language so they cannot understand one another, and work on the city stops.' },
+      { stepId: 'scatter', title: 'Scattered', description: 'The Lord scatters them across the face of the earth. The city is named Babel — confusion.' },
+    ],
+  },
+
   creation: {
     id: 'creation',
     title: 'The Creation',
