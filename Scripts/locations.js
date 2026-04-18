@@ -4,6 +4,90 @@
  */
 
 const LOCATIONS = {
+  babel: {
+    id: 'babel',
+    name: 'Babel',
+    region: 'Mesopotamia (modern Iraq)',
+    description: 'The plain of Shinar where humanity attempted to build a tower to the heavens, resulting in the confusion of languages and the scattering of peoples.',
+    bibleRefs: ['Genesis 11:1-9'],
+    coordinates: { lat: 32.5364, lng: 44.4208 },
+    era: 'antediluvian',
+    associatedEvents: ['tower_of_babel'],
+    associatedCharacters: [],
+    environmentType: 'plains',
+    ambience: 'A vast plain, scaffolding of an unfinished tower, the murmur of many languages suddenly becoming unintelligible.',
+  },
+
+  ur: {
+    id: 'ur',
+    name: 'Ur of the Chaldeans',
+    region: 'Mesopotamia (modern Iraq)',
+    description: 'The ancient Sumerian city-state that was home to Abraham before God called him to the land of promise.',
+    bibleRefs: ['Genesis 11:28', 'Genesis 11:31'],
+    coordinates: { lat: 30.9625, lng: 46.1031 },
+    era: 'patriarchs',
+    associatedEvents: ['call_of_abraham'],
+    associatedCharacters: ['abraham'],
+    environmentType: 'city',
+    ambience: 'Clay-brick streets, the ziggurat of Nanna rising against the sky, camel caravans and merchant calls.',
+  },
+
+  sodom: {
+    id: 'sodom',
+    name: 'Sodom',
+    region: 'Dead Sea region',
+    description: 'A city destroyed by God with fire and sulfur because of its wickedness; Lot and his daughters escaped while his wife looked back and became a pillar of salt.',
+    bibleRefs: ['Genesis 13:10', 'Genesis 19'],
+    coordinates: null, // exact location debated
+    era: 'patriarchs',
+    associatedEvents: [],
+    associatedCharacters: ['lot'],
+    environmentType: 'plains',
+    ambience: 'A prosperous but corrupt city on the fertile plain, the air heavy with the sense of impending judgment.',
+  },
+
+  mount_moriah: {
+    id: 'mount_moriah',
+    name: 'Mount Moriah',
+    region: 'Jerusalem, Israel',
+    description: 'The mountain where Abraham offered Isaac and where Solomon later built the Temple; today it is the site of the Dome of the Rock.',
+    bibleRefs: ['Genesis 22:2', '2 Chronicles 3:1'],
+    coordinates: { lat: 31.7781, lng: 35.2354 },
+    era: 'patriarchs',
+    associatedEvents: ['sacrifice_of_isaac'],
+    associatedCharacters: ['abraham', 'isaac'],
+    environmentType: 'mountain',
+    ambience: 'Rocky summit above the city, a stone altar, the sound of wind and a distant ram caught in a thicket.',
+  },
+
+  wilderness: {
+    id: 'wilderness',
+    name: 'Wilderness of Sin / Judean Desert',
+    region: 'Sinai Peninsula / Judea',
+    description: 'The barren wasteland through which Israel wandered forty years, and in which Jesus fasted and was tempted for forty days.',
+    bibleRefs: ['Exodus 16:1', 'Matthew 4:1'],
+    coordinates: { lat: 30.5, lng: 35.0 },
+    era: 'exodus',
+    associatedEvents: ['temptation_of_jesus', 'twelve_spies'],
+    associatedCharacters: ['moses', 'jesus'],
+    environmentType: 'desert',
+    ambience: 'Blinding sun, endless sand and rock, wind carrying sand, eerie silence broken only by the crunch of footsteps.',
+  },
+
+  midian: {
+    id: 'midian',
+    name: 'Midian',
+    region: 'Northwest Arabia / Sinai (modern Saudi Arabia)',
+    description: 'The land where Moses fled after killing an Egyptian guard, where he married Zipporah and encountered God in the burning bush.',
+    bibleRefs: ['Exodus 2:15-3:1'],
+    coordinates: { lat: 28.4, lng: 36.5 },
+    era: 'exodus',
+    associatedEvents: ['burning_bush'],
+    associatedCharacters: ['moses'],
+    environmentType: 'desert',
+    ambience: 'Rocky wilderness terrain, sparse acacia trees, the silence of a shepherd\'s watch, distant bleating of sheep.',
+  },
+
   eden: {
     id: 'eden',
     name: 'Garden of Eden',
