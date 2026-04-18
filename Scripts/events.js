@@ -74,6 +74,78 @@ const BIBLICAL_EVENTS = {
     ],
   },
 
+  call_of_abraham: {
+    id: 'call_of_abraham',
+    title: 'The Call of Abraham',
+    era: 'patriarchs',
+    description: 'God calls Abram from Ur to leave his homeland and journey to an unknown land, promising to make him a great nation.',
+    bibleRefs: ['Genesis 12:1-9'],
+    location: 'ur',
+    characters: ['abraham'],
+    category: 'calling',
+    steps: [
+      { stepId: 'gods_call', title: 'The Call', description: 'God says to Abram: "Leave your country, your people, and your father\'s household for the land I will show you."' },
+      { stepId: 'promise', title: 'The Promise', description: 'God promises to make Abram a great nation, to bless him, and to bless all peoples on earth through him.' },
+      { stepId: 'departure', title: 'Abram Departs', description: 'Abram departs from Harran at age 75, taking Sarai, Lot, and all their possessions.' },
+      { stepId: 'canaan', title: 'Arriving in Canaan', description: 'Abram passes through the land of Canaan as far as the oak of Moreh at Shechem.' },
+      { stepId: 'altar', title: 'Building an Altar', description: 'God appears to Abram and promises the land to his offspring. Abram builds an altar to the Lord.' },
+    ],
+  },
+
+  sacrifice_of_isaac: {
+    id: 'sacrifice_of_isaac',
+    title: 'The Sacrifice of Isaac',
+    era: 'patriarchs',
+    description: 'God tests Abraham by commanding him to offer his son Isaac; at the last moment an angel intervenes and a ram is provided.',
+    bibleRefs: ['Genesis 22:1-19'],
+    location: 'mount_moriah',
+    characters: ['abraham', 'isaac'],
+    category: 'faith',
+    steps: [
+      { stepId: 'gods_command', title: 'The Command', description: 'God commands Abraham to take his only son Isaac to Mount Moriah and offer him as a burnt offering.' },
+      { stepId: 'three_days', title: 'Three Days Journey', description: 'Abraham and Isaac travel three days to the mountain. Isaac asks, "Where is the lamb?" Abraham says, "God will provide."' },
+      { stepId: 'altar_built', title: 'The Altar', description: 'Abraham builds the altar, arranges wood, binds Isaac, and raises the knife.' },
+      { stepId: 'angel_stops', title: 'The Angel Intervenes', description: 'An angel calls from heaven: "Do not harm the boy. Now I know you fear God."' },
+      { stepId: 'ram_provided', title: 'The Ram', description: 'Abraham sees a ram caught in a thicket and offers it instead. He names the place "The Lord Will Provide."' },
+    ],
+  },
+
+  jacobs_ladder: {
+    id: 'jacobs_ladder',
+    title: 'Jacob\'s Ladder',
+    era: 'patriarchs',
+    description: 'On the run from his brother Esau, Jacob dreams of a stairway to heaven with angels ascending and descending, and God renews the covenant promise.',
+    bibleRefs: ['Genesis 28:10-22'],
+    location: 'bethel',
+    characters: ['jacob'],
+    category: 'vision',
+    steps: [
+      { stepId: 'fleeing', title: 'Jacob Flees', description: 'Jacob flees from Beer-sheba toward Haran, afraid of his brother Esau whom he has deceived.' },
+      { stepId: 'stairway', title: 'The Dream', description: 'He dreams of a stairway reaching to heaven, with angels of God ascending and descending.' },
+      { stepId: 'gods_voice', title: 'God Speaks', description: 'The Lord stands above the stairway and renews to Jacob the covenant promises made to Abraham and Isaac.' },
+      { stepId: 'jacob_wakes', title: 'Awaking in Awe', description: 'Jacob wakes and says, "Surely the Lord is in this place, and I did not know it! This is none other than the house of God."' },
+      { stepId: 'pillar', title: 'The Pillar', description: 'Jacob sets up his stone pillow as a pillar, pours oil on it, and names the place Bethel — House of God.' },
+    ],
+  },
+
+  joseph_in_egypt: {
+    id: 'joseph_in_egypt',
+    title: 'Joseph in Egypt',
+    era: 'patriarchs',
+    description: 'Joseph, sold into slavery by his brothers, rises through imprisonment to become second ruler of Egypt and saves the world from famine.',
+    bibleRefs: ['Genesis 37', 'Genesis 39-45'],
+    location: 'egypt',
+    characters: ['joseph_patriarch'],
+    category: 'providence',
+    steps: [
+      { stepId: 'sold', title: 'Sold by His Brothers', description: 'Joseph\'s brothers, jealous of his coat and dreams, sell him to Ishmaelite merchants for twenty pieces of silver.' },
+      { stepId: 'potiphars_house', title: 'In Potiphar\'s House', description: 'Joseph serves faithfully in Potiphar\'s house. Falsely accused by Potiphar\'s wife, he is thrown into prison.' },
+      { stepId: 'dreams_in_prison', title: 'Interpreting Dreams', description: 'Joseph interprets the dreams of the baker and cupbearer. Two years later, Pharaoh has a troubling dream.' },
+      { stepId: 'pharaoh', title: 'Before Pharaoh', description: 'Joseph interprets Pharaoh\'s dream of seven fat and seven lean cows: seven years of plenty and seven of famine.' },
+      { stepId: 'reconciliation', title: 'Reunion', description: 'Joseph reveals himself to his brothers: "I am Joseph! You intended to harm me, but God intended it for good."' },
+    ],
+  },
+
   creation: {
     id: 'creation',
     title: 'The Creation',
