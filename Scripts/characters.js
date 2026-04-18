@@ -197,6 +197,75 @@ const CHARACTERS = {
     },
   },
 
+  aaron: {
+    id: 'aaron',
+    name: 'Aaron',
+    era: 'exodus',
+    role: 'First High Priest of Israel',
+    description: 'Moses\'s brother and spokesperson who became Israel\'s first High Priest.',
+    bibleRefs: ['Exodus 4:14', 'Exodus 28', 'Leviticus 8'],
+    location: 'sinai',
+    relationships: { brother: 'moses', sister: 'miriam' },
+    dialogue: {
+      greeting: 'I am Aaron, the Levite, Moses\'s brother. The Lord has appointed me to speak for him.',
+      onPriesthood: 'The Lord said to Moses: Bring Aaron and his sons and anoint them to serve as priests.',
+      onGoldenCalf: 'Do not be angry. You know how prone these people are to evil.',
+      farewell: 'Aaron was gathered to his people on the top of the mountain, and his son took his place.',
+    },
+  },
+
+  miriam: {
+    id: 'miriam',
+    name: 'Miriam',
+    era: 'exodus',
+    role: 'Prophetess & Sister of Moses',
+    description: 'The sister of Moses and Aaron, a prophetess who led Israel\'s women in worship after crossing the Red Sea.',
+    bibleRefs: ['Exodus 2:4', 'Exodus 15:20', 'Numbers 12'],
+    location: 'red_sea',
+    relationships: { brother: 'moses', brother2: 'aaron' },
+    dialogue: {
+      greeting: 'I am Miriam the prophetess, sister of Aaron.',
+      onRedSea: 'Sing to the Lord, for he has triumphed gloriously — horse and rider he has thrown into the sea!',
+      onMoses: 'When Pharaoh\'s daughter found the basket, I said: Shall I call a Hebrew nurse for you?',
+      farewell: 'Miriam the prophetess took a tambourine and led all the women in singing and dancing.',
+    },
+  },
+
+  joshua: {
+    id: 'joshua',
+    name: 'Joshua',
+    era: 'conquest',
+    role: 'Successor of Moses & Conqueror of Canaan',
+    description: 'Moses\'s assistant who led Israel into the Promised Land, conquered Jericho, and divided the land among the tribes.',
+    bibleRefs: ['Numbers 14:6', 'Joshua 1', 'Joshua 6'],
+    location: 'jericho',
+    relationships: { mentor: 'moses', companion: 'caleb' },
+    dialogue: {
+      greeting: 'Be strong and courageous. Do not be frightened or dismayed, for the Lord your God is with you.',
+      onJericho: 'Shout! For the Lord has given you the city.',
+      onLand: 'As for me and my house, we will serve the Lord.',
+      onPromise: 'Not one word of all the good promises that the Lord made has failed — all have come to pass.',
+      farewell: 'Choose this day whom you will serve. As for me and my house, we will serve the Lord.',
+    },
+  },
+
+  caleb: {
+    id: 'caleb',
+    name: 'Caleb',
+    era: 'conquest',
+    role: 'Faithful Spy & Warrior of Faith',
+    description: 'One of the two spies who brought a faithful report from Canaan; received Hebron as his inheritance at age 85.',
+    bibleRefs: ['Numbers 13:30', 'Numbers 14:24', 'Joshua 14:10-12'],
+    location: 'hebron',
+    relationships: { companion: 'joshua' },
+    dialogue: {
+      greeting: 'I brought the Lord a true report; I followed him fully.',
+      onSpies: 'Let us go up at once and occupy the land, for we are well able to overcome it.',
+      onHebron: 'Here I am today, eighty-five years old — still as strong for war as I was.',
+      farewell: 'Give me this hill country that the Lord promised. I shall drive them out as the Lord said.',
+    },
+  },
+
   moses: {
     id: 'moses',
     name: 'Moses',
