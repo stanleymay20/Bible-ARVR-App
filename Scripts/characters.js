@@ -699,6 +699,78 @@ const CHARACTERS = {
     },
   },
 
+  joseph_husband: {
+    id: 'joseph_husband',
+    name: 'Joseph (husband of Mary)',
+    era: 'new_testament',
+    role: 'carpenter, earthly father of Jesus',
+    description: 'A righteous man from Nazareth, descended from David, who obeyed God and raised Jesus as his own son.',
+    bibleRefs: ['Matthew 1:18-25', 'Luke 2:1-20', 'Matthew 2:13-23'],
+    location: 'nazareth',
+    relationships: { wife: 'mary', fosterSon: 'jesus' },
+    dialogue: {
+      greeting: 'Peace be with you. I am Joseph, a carpenter of Nazareth.',
+      onAnnunciation: 'When I learned Mary was with child, an angel appeared to me in a dream and told me the child was conceived by the Holy Spirit.',
+      onBethlehem: 'We traveled to Bethlehem for the census. The inn was full, so the child was born in a stable — yet the angels sang that night.',
+      onFlight: 'An angel warned me in a dream: take the child and his mother to Egypt. We fled at once to escape Herod.',
+      farewell: 'God guides those who trust him, even through darkness. Walk in his ways.',
+    },
+  },
+
+  john_the_baptist: {
+    id: 'john_the_baptist',
+    name: 'John the Baptist',
+    era: 'new_testament',
+    role: 'prophet, forerunner of the Messiah',
+    description: 'Cousin of Jesus, filled with the Holy Spirit from birth, who preached repentance in the wilderness and baptized Jesus in the Jordan River.',
+    bibleRefs: ['Luke 1:5-25', 'Mark 1:1-11', 'John 1:19-34', 'Matthew 14:1-12'],
+    location: 'jordan_river',
+    relationships: { cousin: 'jesus', mother: 'elizabeth', father: 'zechariah' },
+    dialogue: {
+      greeting: 'Repent! The kingdom of heaven is near. I am a voice crying in the wilderness: prepare the way of the Lord.',
+      onBaptism: 'I baptize you with water, but one who is more powerful than I is coming. He will baptize you with the Holy Spirit and fire.',
+      onJesus: 'Behold, the Lamb of God, who takes away the sin of the world! I am not worthy to untie his sandals.',
+      onPrison: 'Are you the one who is to come, or should we look for another? Send word to Jesus — the blind see, the lame walk.',
+      farewell: 'He must increase, but I must decrease. That is my joy.',
+    },
+  },
+
+  elizabeth: {
+    id: 'elizabeth',
+    name: 'Elizabeth',
+    era: 'new_testament',
+    role: 'mother of John the Baptist',
+    description: 'A righteous woman of the priestly line, wife of Zechariah, who conceived John miraculously in her old age as a sign of God\'s grace.',
+    bibleRefs: ['Luke 1:5-80'],
+    location: 'nazareth',
+    relationships: { husband: 'zechariah', son: 'john_the_baptist', cousin: 'mary' },
+    dialogue: {
+      greeting: 'Blessed are you among women, and blessed is the child you will bear! Why am I so favored that the mother of my Lord should come to me?',
+      onMary: 'When I heard your greeting, the baby leaped in my womb for joy. You are blessed because you believed what the Lord told you.',
+      onJohn: 'His name is John. The Lord had mercy on me and taken away my disgrace before the people.',
+      onGrace: 'Nothing is impossible with God. I am living proof — he opened a barren womb so that his purposes might be fulfilled.',
+      farewell: 'Walk in the promises of God. What he speaks, he will surely bring to pass.',
+    },
+  },
+
+  zechariah: {
+    id: 'zechariah',
+    name: 'Zechariah',
+    era: 'new_testament',
+    role: 'priest, father of John the Baptist',
+    description: 'A priest of the division of Abijah who was struck mute for doubting Gabriel\'s message, then burst into prophecy at John\'s naming.',
+    bibleRefs: ['Luke 1:5-25', 'Luke 1:57-79'],
+    location: 'nazareth',
+    relationships: { wife: 'elizabeth', son: 'john_the_baptist' },
+    dialogue: {
+      greeting: 'I am Zechariah, a priest of the Lord. I serve in the temple according to my division.',
+      onAngel: 'Gabriel appeared to me at the altar of incense and I was struck with fear. I doubted — and for that I could not speak until the day John was named.',
+      onJohn: 'His name is John. And the moment I wrote it, my tongue was loosed and I praised God.',
+      onBenedictus: 'Blessed be the Lord God of Israel, for he has visited and redeemed his people — a horn of salvation in the house of his servant David.',
+      farewell: 'God is faithful to his covenant and to his holy promise. Praise him with all your heart.',
+    },
+  },
+
   moses: {
     id: 'moses',
     name: 'Moses',
