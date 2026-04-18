@@ -25,7 +25,7 @@ describe('LocationRegistry', () => {
 
   describe('getAllLocations', () => {
     it('returns all locations', () => {
-      expect(registry.getAllLocations().length).toBeGreaterThanOrEqual(11);
+      expect(registry.getAllLocations().length).toBeGreaterThanOrEqual(35);
     });
 
     it('every location has required fields', () => {
